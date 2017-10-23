@@ -1,1 +1,1 @@
-To run: Npm install then npm run
+To run: npm install, then npm run
