@@ -27,14 +27,13 @@ class App extends Component {
   onAdddPressed() {
     var title = this.state.title
     let description = this.state.desc
-    var that = this;
     if (title !== '' && description !== '') {
       let data = {
         title: title,
         description: description,
       }
-      that.props.dispatch(noteActions.postNote(data))
-      that.setState({ creating: false })
+      this.props.dispatch(noteActions.postNote(data))
+      this.setState({ creating: false })
     }
   }
 
